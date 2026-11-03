@@ -1,4 +1,15 @@
 package com.carlic.RmpCore.chemistry.compound;
 
-public class CompoundCategory {
+public enum CompoundCategory {
+
+    OXIDE,
+    ACID,
+    BASE,
+    SALT,
+    HYDROXIDE,
+    CARBONATE,
+    SULFATE,
+    SILICATE,
+    ORGANIC,
+    OTHER
 }

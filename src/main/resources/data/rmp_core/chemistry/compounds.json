@@ -1,0 +1,231 @@
+[
+  {
+    "id": "water",
+    "name": "Water",
+    "vietnameseName": "Nước",
+    "chemicalFormula": "H2O",
+    "category": "OTHER",
+    "composition": {
+      "H": 2,
+      "O": 1
+    }
+  },
+  {
+    "id": "carbon_dioxide",
+    "name": "Carbon Dioxide",
+    "vietnameseName": "Cacbon đioxit",
+    "chemicalFormula": "CO2",
+    "category": "OXIDE",
+    "composition": {
+      "C": 1,
+      "O": 2
+    }
+  },
+  {
+    "id": "carbon_monoxide",
+    "name": "Carbon Monoxide",
+    "vietnameseName": "Cacbon monoxit",
+    "chemicalFormula": "CO",
+    "category": "OXIDE",
+    "composition": {
+      "C": 1,
+      "O": 1
+    }
+  },
+  {
+    "id": "methane",
+    "name": "Methane",
+    "vietnameseName": "Metan",
+    "chemicalFormula": "CH4",
+    "category": "ORGANIC",
+    "composition": {
+      "C": 1,
+      "H": 4
+    }
+  },
+  {
+    "id": "ammonia",
+    "name": "Ammonia",
+    "vietnameseName": "Amoniac",
+    "chemicalFormula": "NH3",
+    "category": "OTHER",
+    "composition": {
+      "N": 1,
+      "H": 3
+    }
+  },
+  {
+    "id": "sodium_chloride",
+    "name": "Sodium Chloride",
+    "vietnameseName": "Natri clorua",
+    "chemicalFormula": "NaCl",
+    "category": "SALT",
+    "composition": {
+      "Na": 1,
+      "Cl": 1
+    }
+  },
+  {
+    "id": "sodium_hydroxide",
+    "name": "Sodium Hydroxide",
+    "vietnameseName": "Natri hydroxit",
+    "chemicalFormula": "NaOH",
+    "category": "BASE",
+    "composition": {
+      "Na": 1,
+      "O": 1,
+      "H": 1
+    }
+  },
+  {
+    "id": "hydrochloric_acid",
+    "name": "Hydrochloric Acid",
+    "vietnameseName": "Axit clohidric",
+    "chemicalFormula": "HCl",
+    "category": "ACID",
+    "composition": {
+      "H": 1,
+      "Cl": 1
+    }
+  },
+  {
+    "id": "sulfuric_acid",
+    "name": "Sulfuric Acid",
+    "vietnameseName": "Axit sulfuric",
+    "chemicalFormula": "H2SO4",
+    "category": "ACID",
+    "composition": {
+      "H": 2,
+      "S": 1,
+      "O": 4
+    }
+  },
+  {
+    "id": "nitric_acid",
+    "name": "Nitric Acid",
+    "vietnameseName": "Axit nitric",
+    "chemicalFormula": "HNO3",
+    "category": "ACID",
+    "composition": {
+      "H": 1,
+      "N": 1,
+      "O": 3
+    }
+  },
+  {
+    "id": "phosphoric_acid",
+    "name": "Phosphoric Acid",
+    "vietnameseName": "Axit photphoric",
+    "chemicalFormula": "H3PO4",
+    "category": "ACID",
+    "composition": {
+      "H": 3,
+      "P": 1,
+      "O": 4
+    }
+  },
+  {
+    "id": "calcium_carbonate",
+    "name": "Calcium Carbonate",
+    "vietnameseName": "Canxi cacbonat",
+    "chemicalFormula": "CaCO3",
+    "category": "CARBONATE",
+    "composition": {
+      "Ca": 1,
+      "C": 1,
+      "O": 3
+    }
+  },
+  {
+    "id": "calcium_oxide",
+    "name": "Calcium Oxide",
+    "vietnameseName": "Canxi oxit",
+    "chemicalFormula": "CaO",
+    "category": "OXIDE",
+    "composition": {
+      "Ca": 1,
+      "O": 1
+    }
+  },
+  {
+    "id": "silicon_dioxide",
+    "name": "Silicon Dioxide",
+    "vietnameseName": "Silic đioxit",
+    "chemicalFormula": "SiO2",
+    "category": "OXIDE",
+    "composition": {
+      "Si": 1,
+      "O": 2
+    }
+  },
+  {
+    "id": "aluminum_oxide",
+    "name": "Aluminum Oxide",
+    "vietnameseName": "Nhôm oxit",
+    "chemicalFormula": "Al2O3",
+    "category": "OXIDE",
+    "composition": {
+      "Al": 2,
+      "O": 3
+    }
+  },
+  {
+    "id": "iron_iii_oxide",
+    "name": "Iron(III) Oxide",
+    "vietnameseName": "Sắt(III) oxit",
+    "chemicalFormula": "Fe2O3",
+    "category": "OXIDE",
+    "composition": {
+      "Fe": 2,
+      "O": 3
+    }
+  },
+  {
+    "id": "iron_ii_iii_oxide",
+    "name": "Iron(II,III) Oxide",
+    "vietnameseName": "Sắt(II,III) oxit",
+    "chemicalFormula": "Fe3O4",
+    "category": "OXIDE",
+    "composition": {
+      "Fe": 3,
+      "O": 4
+    }
+  },
+  {
+    "id": "copper_ii_sulfate",
+    "name": "Copper(II) Sulfate",
+    "vietnameseName": "Đồng(II) sulfat",
+    "chemicalFormula": "CuSO4",
+    "category": "SULFATE",
+    "composition": {
+      "Cu": 1,
+      "S": 1,
+      "O": 4
+    }
+  },
+  {
+    "id": "sodium_carbonate",
+    "name": "Sodium Carbonate",
+    "vietnameseName": "Natri cacbonat",
+    "chemicalFormula": "Na2CO3",
+    "category": "CARBONATE",
+    "composition": {
+      "Na": 2,
+      "C": 1,
+      "O": 3
+    }
+  },
+  {
+    "id": "calcium_sulfate_dihydrate",
+    "name": "Calcium Sulfate Dihydrate",
+    "vietnameseName": "Canxi sulfat dihydrat",
+    "chemicalFormula": "CaSO4·2H2O",
+    "category": "SULFATE",
+    "composition": {
+      "Ca": 1,
+      "S": 1,
+      "O": 6,
+      "H": 4
+    }
+  }
+]

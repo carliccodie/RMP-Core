@@ -1,5 +1,8 @@
 {
   "itemGroup.rmp_core": "Example Mod Tab",
   "block.rmp_core.example_block": "Example Block",
-  "item.rmp_core.example_item": "Example Item"
+  "item.rmp_core.example_item": "Example Item",
+  "item.rmp_core.raw_silicon": "Raw Silicon",
+  "block.rmp_core.silicon_ore": "Silicon Ore",
+  "item.rmp_core.silicon_ore_chunk": "Silicon Ore Chunk"
 }

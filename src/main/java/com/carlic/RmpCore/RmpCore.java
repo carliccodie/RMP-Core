@@ -1,5 +1,10 @@
-package com.carlic.rmpcore;
+package com.carlic.RmpCore;
 
+import com.carlic.RmpCore.registry.ModItems;
+import com.carlic.RmpCore.block.ModBlocks;
+import com.carlic.RmpCore.chemistry.element.ElementDatabase;
+import com.carlic.RmpCore.chemistry.mineral.MineralDatabase;
+import com.carlic.RmpCore.chemistry.compound.CompoundDatabase;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -33,18 +38,18 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(rmpcore.MODID)
-public class rmpcore {
+@Mod(RmpCore.MOD_ID)
+public class RmpCore {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "rmp_core";
+    public static final String MOD_ID = "rmp_core";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "rmp_core" namespace
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MOD_ID);
     // Create a Deferred Register to hold Items which will all be registered under the "rmp_core" namespace
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MOD_ID);
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "rmp_core" namespace
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
 
     // Creates a new Block with the id "rmp_core:example_block", combining the namespace and path
     public static final DeferredBlock<Block> EXAMPLE_BLOCK = BLOCKS.registerSimpleBlock("example_block", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
@@ -55,13 +60,19 @@ public class rmpcore {
     public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder().alwaysEdible().nutrition(1).saturationModifier(2f).build()));
 
     // Creates a creative tab with the id "rmp_core:example_tab" for the example item, that is placed after the combat tab
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder().title(Component.translatable("itemGroup.rmp_core")).withTabsBefore(CreativeModeTabs.COMBAT).icon(() -> EXAMPLE_ITEM.get().getDefaultInstance()).displayItems((parameters, output) -> {
-        output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
-    }).build());
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", ()
+            -> CreativeModeTab.builder().title(Component.translatable("itemGroup.rmp_core")).withTabsBefore(CreativeModeTabs.COMBAT).icon(()
+            -> EXAMPLE_ITEM.get().getDefaultInstance())
+            .displayItems((parameters, output) -> {
+                output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                output.accept(ModItems.RAW_SILICON.get());
+                output.accept(ModBlocks.SILICON_ORE_ITEM.get());
+                output.accept(ModItems.SILICON_ORE_CHUNK.get());
+            }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public rmpcore(IEventBus modEventBus, ModContainer modContainer) {
+    public RmpCore(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -82,11 +93,35 @@ public class rmpcore {
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        ModItems.ITEMS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
+        ModBlocks.ITEMS.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
+        ElementDatabase database = ElementDatabase.load();
+
+        LOGGER.info(
+                "RMP Chemistry Database loaded: {} elements.",
+                database.getElementCount()
+        );
+        MineralDatabase mineralDatabase =
+                MineralDatabase.load(database);
+
+        LOGGER.info(
+                "RMP Mineral Database loaded: {} minerals.",
+                mineralDatabase.getMineralCount()
+        );
+        CompoundDatabase compoundDatabase =
+                CompoundDatabase.load(database);
+
+        LOGGER.info(
+                "RMP Compound Database loaded: {} compounds.",
+                compoundDatabase.getCompoundCount()
+        );
 
         if (Config.logDirtBlock) LOGGER.info("DIRT BLOCK >> {}", BuiltInRegistries.BLOCK.getKey(Blocks.DIRT));
 
@@ -108,7 +143,7 @@ public class rmpcore {
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = MOD_ID,  value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {

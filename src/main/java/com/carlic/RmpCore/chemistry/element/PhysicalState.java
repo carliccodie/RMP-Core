@@ -1,4 +1,8 @@
 package com.carlic.RmpCore.chemistry.element;
 
-public class PhysicalState {
+public enum PhysicalState {
+    SOLID,
+    LIQUID,
+    GAS,
+    UNKNOWN
 }

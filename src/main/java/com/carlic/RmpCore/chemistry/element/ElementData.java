@@ -1,4 +1,12 @@
 package com.carlic.RmpCore.chemistry.element;
 
-public class ElementData {
+public record ElementData(
+        int atomicNumber,
+        String symbol,
+        String name,
+        String vietnameseName,
+        double atomicMass,
+        ElementCategory category,
+        PhysicalState physicalState
+) {
 }
