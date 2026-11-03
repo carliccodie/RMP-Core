@@ -1,0 +1,137 @@
+[
+  {
+    "id": "quartz",
+    "name": "Quartz",
+    "vietnameseName": "Thạch anh",
+    "chemicalFormula": "SiO2",
+    "category": "SILICATE",
+    "mohsHardness": 7.0,
+    "elementSymbols": ["Si", "O"]
+  },
+  {
+    "id": "hematite",
+    "name": "Hematite",
+    "vietnameseName": "Hematit",
+    "chemicalFormula": "Fe2O3",
+    "category": "OXIDE",
+    "mohsHardness": 6.0,
+    "elementSymbols": ["Fe", "O"]
+  },
+  {
+    "id": "magnetite",
+    "name": "Magnetite",
+    "vietnameseName": "Manhetit",
+    "chemicalFormula": "Fe3O4",
+    "category": "OXIDE",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Fe", "O"]
+  },
+  {
+    "id": "limonite",
+    "name": "Limonite",
+    "vietnameseName": "Limonit",
+    "chemicalFormula": "FeO(OH)·nH2O",
+    "category": "OXIDE",
+    "mohsHardness": 4.0,
+    "elementSymbols": ["Fe", "O", "H"]
+  },
+  {
+    "id": "chalcopyrite",
+    "name": "Chalcopyrite",
+    "vietnameseName": "Chalcopyrit",
+    "chemicalFormula": "CuFeS2",
+    "category": "SULFIDE",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Cu", "Fe", "S"]
+  },
+  {
+    "id": "bornite",
+    "name": "Bornite",
+    "vietnameseName": "Bornit",
+    "chemicalFormula": "Cu5FeS4",
+    "category": "SULFIDE",
+    "mohsHardness": 3.0,
+    "elementSymbols": ["Cu", "Fe", "S"]
+  },
+  {
+    "id": "galena",
+    "name": "Galena",
+    "vietnameseName": "Galena",
+    "chemicalFormula": "PbS",
+    "category": "SULFIDE",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["Pb", "S"]
+  },
+  {
+    "id": "sphalerite",
+    "name": "Sphalerite",
+    "vietnameseName": "Sphalerit",
+    "chemicalFormula": "ZnS",
+    "category": "SULFIDE",
+    "mohsHardness": 4.0,
+    "elementSymbols": ["Zn", "S"]
+  },
+  {
+    "id": "pyrite",
+    "name": "Pyrite",
+    "vietnameseName": "Pyrit",
+    "chemicalFormula": "FeS2",
+    "category": "SULFIDE",
+    "mohsHardness": 6.0,
+    "elementSymbols": ["Fe", "S"]
+  },
+  {
+    "id": "bauxite",
+    "name": "Bauxite",
+    "vietnameseName": "Bôxit",
+    "chemicalFormula": "Al2O3·nH2O",
+    "category": "OXIDE",
+    "mohsHardness": 3.0,
+    "elementSymbols": ["Al", "O", "H"]
+  },
+  {
+    "id": "calcite",
+    "name": "Calcite",
+    "vietnameseName": "Canxit",
+    "chemicalFormula": "CaCO3",
+    "category": "CARBONATE",
+    "mohsHardness": 3.0,
+    "elementSymbols": ["Ca", "C", "O"]
+  },
+  {
+    "id": "dolomite",
+    "name": "Dolomite",
+    "vietnameseName": "Đolomit",
+    "chemicalFormula": "CaMg(CO3)2",
+    "category": "CARBONATE",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Ca", "Mg", "C", "O"]
+  },
+  {
+    "id": "gypsum",
+    "name": "Gypsum",
+    "vietnameseName": "Thạch cao",
+    "chemicalFormula": "CaSO4·2H2O",
+    "category": "SULFATE",
+    "mohsHardness": 2.0,
+    "elementSymbols": ["Ca", "S", "O", "H"]
+  },
+  {
+    "id": "fluorite",
+    "name": "Fluorite",
+    "vietnameseName": "Fluorit",
+    "chemicalFormula": "CaF2",
+    "category": "HALIDE",
+    "mohsHardness": 4.0,
+    "elementSymbols": ["Ca", "F"]
+  },
+  {
+    "id": "apatite",
+    "name": "Apatite",
+    "vietnameseName": "Apatit",
+    "chemicalFormula": "Ca5(PO4)3(F,Cl,OH)",
+    "category": "PHOSPHATE",
+    "mohsHardness": 5.0,
+    "elementSymbols": ["Ca", "P", "O", "F", "Cl", "H"]
+  }
+]

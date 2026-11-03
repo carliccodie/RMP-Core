@@ -1,0 +1,1064 @@
+[
+  {
+    "atomicNumber": 1,
+    "symbol": "H",
+    "name": "Hydrogen",
+    "vietnameseName": "Hydro",
+    "atomicMass": 1.008,
+    "category": "NONMETAL",
+    "physicalState": "GAS"
+  },
+  {
+    "atomicNumber": 2,
+    "symbol": "He",
+    "name": "Helium",
+    "vietnameseName": "Heli",
+    "atomicMass": 4.0026,
+    "category": "NOBLE_GAS",
+    "physicalState": "GAS"
+  },
+  {
+    "atomicNumber": 3,
+    "symbol": "Li",
+    "name": "Lithium",
+    "vietnameseName": "Liti",
+    "atomicMass": 6.94,
+    "category": "ALKALI_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 4,
+    "symbol": "Be",
+    "name": "Beryllium",
+    "vietnameseName": "Berili",
+    "atomicMass": 9.0122,
+    "category": "ALKALINE_EARTH_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 5,
+    "symbol": "B",
+    "name": "Boron",
+    "vietnameseName": "Bo",
+    "atomicMass": 10.81,
+    "category": "METALLOID",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 6,
+    "symbol": "C",
+    "name": "Carbon",
+    "vietnameseName": "Cacbon",
+    "atomicMass": 12.011,
+    "category": "NONMETAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 7,
+    "symbol": "N",
+    "name": "Nitrogen",
+    "vietnameseName": "Nitơ",
+    "atomicMass": 14.007,
+    "category": "NONMETAL",
+    "physicalState": "GAS"
+  },
+  {
+    "atomicNumber": 8,
+    "symbol": "O",
+    "name": "Oxygen",
+    "vietnameseName": "Oxy",
+    "atomicMass": 15.999,
+    "category": "NONMETAL",
+    "physicalState": "GAS"
+  },
+  {
+    "atomicNumber": 9,
+    "symbol": "F",
+    "name": "Fluorine",
+    "vietnameseName": "Flo",
+    "atomicMass": 18.998,
+    "category": "NONMETAL",
+    "physicalState": "GAS"
+  },
+  {
+    "atomicNumber": 10,
+    "symbol": "Ne",
+    "name": "Neon",
+    "vietnameseName": "Neon",
+    "atomicMass": 20.180,
+    "category": "NOBLE_GAS",
+    "physicalState": "GAS"
+  },
+  {
+    "atomicNumber": 11,
+    "symbol": "Na",
+    "name": "Sodium",
+    "vietnameseName": "Natri",
+    "atomicMass": 22.990,
+    "category": "ALKALI_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 12,
+    "symbol": "Mg",
+    "name": "Magnesium",
+    "vietnameseName": "Magie",
+    "atomicMass": 24.305,
+    "category": "ALKALINE_EARTH_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 13,
+    "symbol": "Al",
+    "name": "Aluminium",
+    "vietnameseName": "Nhôm",
+    "atomicMass": 26.982,
+    "category": "POST_TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 14,
+    "symbol": "Si",
+    "name": "Silicon",
+    "vietnameseName": "Silic",
+    "atomicMass": 28.085,
+    "category": "METALLOID",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 15,
+    "symbol": "P",
+    "name": "Phosphorus",
+    "vietnameseName": "Photpho",
+    "atomicMass": 30.974,
+    "category": "NONMETAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 16,
+    "symbol": "S",
+    "name": "Sulfur",
+    "vietnameseName": "Lưu huỳnh",
+    "atomicMass": 32.06,
+    "category": "NONMETAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 17,
+    "symbol": "Cl",
+    "name": "Chlorine",
+    "vietnameseName": "Clo",
+    "atomicMass": 35.45,
+    "category": "NONMETAL",
+    "physicalState": "GAS"
+  },
+  {
+    "atomicNumber": 18,
+    "symbol": "Ar",
+    "name": "Argon",
+    "vietnameseName": "Argon",
+    "atomicMass": 39.948,
+    "category": "NOBLE_GAS",
+    "physicalState": "GAS"
+  },
+  {
+    "atomicNumber": 19,
+    "symbol": "K",
+    "name": "Potassium",
+    "vietnameseName": "Kali",
+    "atomicMass": 39.098,
+    "category": "ALKALI_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 20,
+    "symbol": "Ca",
+    "name": "Calcium",
+    "vietnameseName": "Canxi",
+    "atomicMass": 40.078,
+    "category": "ALKALINE_EARTH_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 21,
+    "symbol": "Sc",
+    "name": "Scandium",
+    "vietnameseName": "Scandi",
+    "atomicMass": 44.9559,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 22,
+    "symbol": "Ti",
+    "name": "Titanium",
+    "vietnameseName": "Titan",
+    "atomicMass": 47.867,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 23,
+    "symbol": "V",
+    "name": "Vanadium",
+    "vietnameseName": "Vanadi",
+    "atomicMass": 50.9415,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 24,
+    "symbol": "Cr",
+    "name": "Chromium",
+    "vietnameseName": "Crom",
+    "atomicMass": 51.9961,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 25,
+    "symbol": "Mn",
+    "name": "Manganese",
+    "vietnameseName": "Mangan",
+    "atomicMass": 54.9380,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 26,
+    "symbol": "Fe",
+    "name": "Iron",
+    "vietnameseName": "Sắt",
+    "atomicMass": 55.845,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 27,
+    "symbol": "Co",
+    "name": "Cobalt",
+    "vietnameseName": "Coban",
+    "atomicMass": 58.9332,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 28,
+    "symbol": "Ni",
+    "name": "Nickel",
+    "vietnameseName": "Niken",
+    "atomicMass": 58.6934,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 29,
+    "symbol": "Cu",
+    "name": "Copper",
+    "vietnameseName": "Đồng",
+    "atomicMass": 63.546,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 30,
+    "symbol": "Zn",
+    "name": "Zinc",
+    "vietnameseName": "Kẽm",
+    "atomicMass": 65.38,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 31,
+    "symbol": "Ga",
+    "name": "Gallium",
+    "vietnameseName": "Gali",
+    "atomicMass": 69.723,
+    "category": "POST_TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 32,
+    "symbol": "Ge",
+    "name": "Germanium",
+    "vietnameseName": "Gecmani",
+    "atomicMass": 72.630,
+    "category": "METALLOID",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 33,
+    "symbol": "As",
+    "name": "Arsenic",
+    "vietnameseName": "Asen",
+    "atomicMass": 74.9216,
+    "category": "METALLOID",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 34,
+    "symbol": "Se",
+    "name": "Selenium",
+    "vietnameseName": "Seleni",
+    "atomicMass": 78.971,
+    "category": "NONMETAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 35,
+    "symbol": "Br",
+    "name": "Bromine",
+    "vietnameseName": "Brom",
+    "atomicMass": 79.904,
+    "category": "NONMETAL",
+    "physicalState": "LIQUID"
+  },
+  {
+    "atomicNumber": 36,
+    "symbol": "Kr",
+    "name": "Krypton",
+    "vietnameseName": "Kripton",
+    "atomicMass": 83.798,
+    "category": "NOBLE_GAS",
+    "physicalState": "GAS"
+  },
+  {
+    "atomicNumber": 37,
+    "symbol": "Rb",
+    "name": "Rubidium",
+    "vietnameseName": "Rubidi",
+    "atomicMass": 85.4678,
+    "category": "ALKALI_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 38,
+    "symbol": "Sr",
+    "name": "Strontium",
+    "vietnameseName": "Stronti",
+    "atomicMass": 87.62,
+    "category": "ALKALINE_EARTH_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 39,
+    "symbol": "Y",
+    "name": "Yttrium",
+    "vietnameseName": "Ytri",
+    "atomicMass": 88.9058,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 40,
+    "symbol": "Zr",
+    "name": "Zirconium",
+    "vietnameseName": "Zirconi",
+    "atomicMass": 91.224,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 41,
+    "symbol": "Nb",
+    "name": "Niobium",
+    "vietnameseName": "Niobi",
+    "atomicMass": 92.9064,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 42,
+    "symbol": "Mo",
+    "name": "Molybdenum",
+    "vietnameseName": "Molypden",
+    "atomicMass": 95.95,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 43,
+    "symbol": "Tc",
+    "name": "Technetium",
+    "vietnameseName": "Tecneti",
+    "atomicMass": 98,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 44,
+    "symbol": "Ru",
+    "name": "Ruthenium",
+    "vietnameseName": "Rutheni",
+    "atomicMass": 101.07,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 45,
+    "symbol": "Rh",
+    "name": "Rhodium",
+    "vietnameseName": "Rodi",
+    "atomicMass": 102.9055,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 46,
+    "symbol": "Pd",
+    "name": "Palladium",
+    "vietnameseName": "Paladi",
+    "atomicMass": 106.42,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 47,
+    "symbol": "Ag",
+    "name": "Silver",
+    "vietnameseName": "Bạc",
+    "atomicMass": 107.8682,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 48,
+    "symbol": "Cd",
+    "name": "Cadmium",
+    "vietnameseName": "Cadmi",
+    "atomicMass": 112.414,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 49,
+    "symbol": "In",
+    "name": "Indium",
+    "vietnameseName": "Indi",
+    "atomicMass": 114.818,
+    "category": "POST_TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 50,
+    "symbol": "Sn",
+    "name": "Tin",
+    "vietnameseName": "Thiếc",
+    "atomicMass": 118.710,
+    "category": "POST_TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 51,
+    "symbol": "Sb",
+    "name": "Antimony",
+    "vietnameseName": "Antimon",
+    "atomicMass": 121.760,
+    "category": "METALLOID",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 52,
+    "symbol": "Te",
+    "name": "Tellurium",
+    "vietnameseName": "Telua",
+    "atomicMass": 127.60,
+    "category": "METALLOID",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 53,
+    "symbol": "I",
+    "name": "Iodine",
+    "vietnameseName": "Iốt",
+    "atomicMass": 126.9045,
+    "category": "NONMETAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 54,
+    "symbol": "Xe",
+    "name": "Xenon",
+    "vietnameseName": "Xenon",
+    "atomicMass": 131.293,
+    "category": "NOBLE_GAS",
+    "physicalState": "GAS"
+  },
+  {
+    "atomicNumber": 55,
+    "symbol": "Cs",
+    "name": "Cesium",
+    "vietnameseName": "Xesi",
+    "atomicMass": 132.9055,
+    "category": "ALKALI_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 56,
+    "symbol": "Ba",
+    "name": "Barium",
+    "vietnameseName": "Bari",
+    "atomicMass": 137.327,
+    "category": "ALKALINE_EARTH_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 57,
+    "symbol": "La",
+    "name": "Lanthanum",
+    "vietnameseName": "Lantan",
+    "atomicMass": 138.9055,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 58,
+    "symbol": "Ce",
+    "name": "Cerium",
+    "vietnameseName": "Xeri",
+    "atomicMass": 140.116,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 59,
+    "symbol": "Pr",
+    "name": "Praseodymium",
+    "vietnameseName": "Praseodymi",
+    "atomicMass": 140.9077,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 60,
+    "symbol": "Nd",
+    "name": "Neodymium",
+    "vietnameseName": "Neodymi",
+    "atomicMass": 144.242,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 61,
+    "symbol": "Pm",
+    "name": "Promethium",
+    "vietnameseName": "Promethi",
+    "atomicMass": 145,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 62,
+    "symbol": "Sm",
+    "name": "Samarium",
+    "vietnameseName": "Samari",
+    "atomicMass": 150.36,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 63,
+    "symbol": "Eu",
+    "name": "Europium",
+    "vietnameseName": "Europi",
+    "atomicMass": 151.964,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 64,
+    "symbol": "Gd",
+    "name": "Gadolinium",
+    "vietnameseName": "Gadolini",
+    "atomicMass": 157.25,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 65,
+    "symbol": "Tb",
+    "name": "Terbium",
+    "vietnameseName": "Terbi",
+    "atomicMass": 158.9254,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 66,
+    "symbol": "Dy",
+    "name": "Dysprosium",
+    "vietnameseName": "Dysprosi",
+    "atomicMass": 162.500,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 67,
+    "symbol": "Ho",
+    "name": "Holmium",
+    "vietnameseName": "Holmi",
+    "atomicMass": 164.9303,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 68,
+    "symbol": "Er",
+    "name": "Erbium",
+    "vietnameseName": "Erbi",
+    "atomicMass": 167.259,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 69,
+    "symbol": "Tm",
+    "name": "Thulium",
+    "vietnameseName": "Thuli",
+    "atomicMass": 168.9342,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 70,
+    "symbol": "Yb",
+    "name": "Ytterbium",
+    "vietnameseName": "Ytterbi",
+    "atomicMass": 173.045,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 71,
+    "symbol": "Lu",
+    "name": "Lutetium",
+    "vietnameseName": "Luteti",
+    "atomicMass": 174.9668,
+    "category": "LANTHANIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 72,
+    "symbol": "Hf",
+    "name": "Hafnium",
+    "vietnameseName": "Hafni",
+    "atomicMass": 178.49,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 73,
+    "symbol": "Ta",
+    "name": "Tantalum",
+    "vietnameseName": "Tantan",
+    "atomicMass": 180.9479,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 74,
+    "symbol": "W",
+    "name": "Tungsten",
+    "vietnameseName": "Vonfram",
+    "atomicMass": 183.84,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 75,
+    "symbol": "Re",
+    "name": "Rhenium",
+    "vietnameseName": "Rheni",
+    "atomicMass": 186.207,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 76,
+    "symbol": "Os",
+    "name": "Osmium",
+    "vietnameseName": "Osmi",
+    "atomicMass": 190.23,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 77,
+    "symbol": "Ir",
+    "name": "Iridium",
+    "vietnameseName": "Iridi",
+    "atomicMass": 192.217,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 78,
+    "symbol": "Pt",
+    "name": "Platinum",
+    "vietnameseName": "Bạch kim",
+    "atomicMass": 195.084,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 79,
+    "symbol": "Au",
+    "name": "Gold",
+    "vietnameseName": "Vàng",
+    "atomicMass": 196.9666,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 80,
+    "symbol": "Hg",
+    "name": "Mercury",
+    "vietnameseName": "Thủy ngân",
+    "atomicMass": 200.592,
+    "category": "TRANSITION_METAL",
+    "physicalState": "LIQUID"
+  },
+  {
+    "atomicNumber": 81,
+    "symbol": "Tl",
+    "name": "Thallium",
+    "vietnameseName": "Tali",
+    "atomicMass": 204.38,
+    "category": "POST_TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 82,
+    "symbol": "Pb",
+    "name": "Lead",
+    "vietnameseName": "Chì",
+    "atomicMass": 207.2,
+    "category": "POST_TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 83,
+    "symbol": "Bi",
+    "name": "Bismuth",
+    "vietnameseName": "Bitmut",
+    "atomicMass": 208.9804,
+    "category": "POST_TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 84,
+    "symbol": "Po",
+    "name": "Polonium",
+    "vietnameseName": "Poloni",
+    "atomicMass": 209,
+    "category": "POST_TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 85,
+    "symbol": "At",
+    "name": "Astatine",
+    "vietnameseName": "Astatin",
+    "atomicMass": 210,
+    "category": "METALLOID",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 86,
+    "symbol": "Rn",
+    "name": "Radon",
+    "vietnameseName": "Radon",
+    "atomicMass": 222,
+    "category": "NOBLE_GAS",
+    "physicalState": "GAS"
+  },
+  {
+    "atomicNumber": 87,
+    "symbol": "Fr",
+    "name": "Francium",
+    "vietnameseName": "Franxi",
+    "atomicMass": 223,
+    "category": "ALKALI_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 88,
+    "symbol": "Ra",
+    "name": "Radium",
+    "vietnameseName": "Radi",
+    "atomicMass": 226,
+    "category": "ALKALINE_EARTH_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 89,
+    "symbol": "Ac",
+    "name": "Actinium",
+    "vietnameseName": "Actini",
+    "atomicMass": 227,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 90,
+    "symbol": "Th",
+    "name": "Thorium",
+    "vietnameseName": "Thori",
+    "atomicMass": 232.0377,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 91,
+    "symbol": "Pa",
+    "name": "Protactinium",
+    "vietnameseName": "Protactini",
+    "atomicMass": 231.0359,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 92,
+    "symbol": "U",
+    "name": "Uranium",
+    "vietnameseName": "Urani",
+    "atomicMass": 238.0289,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 93,
+    "symbol": "Np",
+    "name": "Neptunium",
+    "vietnameseName": "Neptuni",
+    "atomicMass": 237,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 94,
+    "symbol": "Pu",
+    "name": "Plutonium",
+    "vietnameseName": "Plutoni",
+    "atomicMass": 244,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 95,
+    "symbol": "Am",
+    "name": "Americium",
+    "vietnameseName": "Americi",
+    "atomicMass": 243,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 96,
+    "symbol": "Cm",
+    "name": "Curium",
+    "vietnameseName": "Curi",
+    "atomicMass": 247,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 97,
+    "symbol": "Bk",
+    "name": "Berkelium",
+    "vietnameseName": "Berkeli",
+    "atomicMass": 247,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 98,
+    "symbol": "Cf",
+    "name": "Californium",
+    "vietnameseName": "Californi",
+    "atomicMass": 251,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 99,
+    "symbol": "Es",
+    "name": "Einsteinium",
+    "vietnameseName": "Einsteini",
+    "atomicMass": 252,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 100,
+    "symbol": "Fm",
+    "name": "Fermium",
+    "vietnameseName": "Fermi",
+    "atomicMass": 257,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 101,
+    "symbol": "Md",
+    "name": "Mendelevium",
+    "vietnameseName": "Mendelevi",
+    "atomicMass": 258,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 102,
+    "symbol": "No",
+    "name": "Nobelium",
+    "vietnameseName": "Nobeli",
+    "atomicMass": 259,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 103,
+    "symbol": "Lr",
+    "name": "Lawrencium",
+    "vietnameseName": "Lawrenci",
+    "atomicMass": 266,
+    "category": "ACTINIDE",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 104,
+    "symbol": "Rf",
+    "name": "Rutherfordium",
+    "vietnameseName": "Rutherfordi",
+    "atomicMass": 267,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 105,
+    "symbol": "Db",
+    "name": "Dubnium",
+    "vietnameseName": "Dubni",
+    "atomicMass": 268,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 106,
+    "symbol": "Sg",
+    "name": "Seaborgium",
+    "vietnameseName": "Seaborgi",
+    "atomicMass": 269,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 107,
+    "symbol": "Bh",
+    "name": "Bohrium",
+    "vietnameseName": "Bohri",
+    "atomicMass": 270,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 108,
+    "symbol": "Hs",
+    "name": "Hassium",
+    "vietnameseName": "Hassi",
+    "atomicMass": 277,
+    "category": "TRANSITION_METAL",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 109,
+    "symbol": "Mt",
+    "name": "Meitnerium",
+    "vietnameseName": "Meitneri",
+    "atomicMass": 278,
+    "category": "UNKNOWN",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 110,
+    "symbol": "Ds",
+    "name": "Darmstadtium",
+    "vietnameseName": "Darmstadti",
+    "atomicMass": 281,
+    "category": "UNKNOWN",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 111,
+    "symbol": "Rg",
+    "name": "Roentgenium",
+    "vietnameseName": "Roentgeni",
+    "atomicMass": 282,
+    "category": "UNKNOWN",
+    "physicalState": "SOLID"
+  },
+  {
+    "atomicNumber": 112,
+    "symbol": "Cn",
+    "name": "Copernicium",
+    "vietnameseName": "Copernixi",
+    "atomicMass": 285,
+    "category": "UNKNOWN",
+    "physicalState": "UNKNOWN"
+  },
+  {
+    "atomicNumber": 113,
+    "symbol": "Nh",
+    "name": "Nihonium",
+    "vietnameseName": "Nihoni",
+    "atomicMass": 286,
+    "category": "UNKNOWN",
+    "physicalState": "UNKNOWN"
+  },
+  {
+    "atomicNumber": 114,
+    "symbol": "Fl",
+    "name": "Flerovium",
+    "vietnameseName": "Flerovi",
+    "atomicMass": 289,
+    "category": "UNKNOWN",
+    "physicalState": "UNKNOWN"
+  },
+  {
+    "atomicNumber": 115,
+    "symbol": "Mc",
+    "name": "Moscovium",
+    "vietnameseName": "Moscovi",
+    "atomicMass": 290,
+    "category": "UNKNOWN",
+    "physicalState": "UNKNOWN"
+  },
+  {
+    "atomicNumber": 116,
+    "symbol": "Lv",
+    "name": "Livermorium",
+    "vietnameseName": "Livermori",
+    "atomicMass": 293,
+    "category": "UNKNOWN",
+    "physicalState": "UNKNOWN"
+  },
+  {
+    "atomicNumber": 117,
+    "symbol": "Ts",
+    "name": "Tennessine",
+    "vietnameseName": "Tennessin",
+    "atomicMass": 294,
+    "category": "UNKNOWN",
+    "physicalState": "UNKNOWN"
+  },
+  {
+    "atomicNumber": 118,
+    "symbol": "Og",
+    "name": "Oganesson",
+    "vietnameseName": "Oganesson",
+    "atomicMass": 294,
+    "category": "UNKNOWN",
+    "physicalState": "UNKNOWN"
+  }
+]
