@@ -10,6 +10,10 @@ public enum MineralCategory {
     HALIDE,
     PHOSPHATE,
     HYDROXIDE,
+    BORATE,
+    VANADATE,
     NATIVE_ELEMENT,
+    TUNGSTATE,
+    MOLYBDATE,
     OTHER
 }

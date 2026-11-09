@@ -5,6 +5,7 @@
     "vietnameseName": "Thạch anh",
     "chemicalFormula": "SiO2",
     "category": "SILICATE",
+    "formulaType": "FIXED",
     "mohsHardness": 7.0,
     "elementSymbols": ["Si", "O"]
   },
@@ -14,6 +15,7 @@
     "vietnameseName": "Hematit",
     "chemicalFormula": "Fe2O3",
     "category": "OXIDE",
+    "formulaType": "FIXED",
     "mohsHardness": 6.0,
     "elementSymbols": ["Fe", "O"]
   },
@@ -23,6 +25,7 @@
     "vietnameseName": "Manhetit",
     "chemicalFormula": "Fe3O4",
     "category": "OXIDE",
+    "formulaType": "FIXED",
     "mohsHardness": 5.5,
     "elementSymbols": ["Fe", "O"]
   },
@@ -32,6 +35,7 @@
     "vietnameseName": "Limonit",
     "chemicalFormula": "FeO(OH)·nH2O",
     "category": "OXIDE",
+    "formulaType": "VARIABLE",
     "mohsHardness": 4.0,
     "elementSymbols": ["Fe", "O", "H"]
   },
@@ -41,6 +45,7 @@
     "vietnameseName": "Chalcopyrit",
     "chemicalFormula": "CuFeS2",
     "category": "SULFIDE",
+    "formulaType": "FIXED",
     "mohsHardness": 3.5,
     "elementSymbols": ["Cu", "Fe", "S"]
   },
@@ -50,6 +55,7 @@
     "vietnameseName": "Bornit",
     "chemicalFormula": "Cu5FeS4",
     "category": "SULFIDE",
+    "formulaType": "FIXED",
     "mohsHardness": 3.0,
     "elementSymbols": ["Cu", "Fe", "S"]
   },
@@ -59,6 +65,7 @@
     "vietnameseName": "Galena",
     "chemicalFormula": "PbS",
     "category": "SULFIDE",
+    "formulaType": "FIXED",
     "mohsHardness": 2.5,
     "elementSymbols": ["Pb", "S"]
   },
@@ -68,6 +75,7 @@
     "vietnameseName": "Sphalerit",
     "chemicalFormula": "ZnS",
     "category": "SULFIDE",
+    "formulaType": "FIXED",
     "mohsHardness": 4.0,
     "elementSymbols": ["Zn", "S"]
   },
@@ -77,6 +85,7 @@
     "vietnameseName": "Pyrit",
     "chemicalFormula": "FeS2",
     "category": "SULFIDE",
+    "formulaType": "FIXED",
     "mohsHardness": 6.0,
     "elementSymbols": ["Fe", "S"]
   },
@@ -86,6 +95,7 @@
     "vietnameseName": "Bôxit",
     "chemicalFormula": "Al2O3·nH2O",
     "category": "OXIDE",
+    "formulaType": "MIXTURE",
     "mohsHardness": 3.0,
     "elementSymbols": ["Al", "O", "H"]
   },
@@ -95,6 +105,7 @@
     "vietnameseName": "Canxit",
     "chemicalFormula": "CaCO3",
     "category": "CARBONATE",
+    "formulaType": "FIXED",
     "mohsHardness": 3.0,
     "elementSymbols": ["Ca", "C", "O"]
   },
@@ -104,6 +115,7 @@
     "vietnameseName": "Đolomit",
     "chemicalFormula": "CaMg(CO3)2",
     "category": "CARBONATE",
+    "formulaType": "FIXED",
     "mohsHardness": 3.5,
     "elementSymbols": ["Ca", "Mg", "C", "O"]
   },
@@ -113,6 +125,7 @@
     "vietnameseName": "Thạch cao",
     "chemicalFormula": "CaSO4·2H2O",
     "category": "SULFATE",
+    "formulaType": "FIXED",
     "mohsHardness": 2.0,
     "elementSymbols": ["Ca", "S", "O", "H"]
   },
@@ -122,6 +135,7 @@
     "vietnameseName": "Fluorit",
     "chemicalFormula": "CaF2",
     "category": "HALIDE",
+    "formulaType": "FIXED",
     "mohsHardness": 4.0,
     "elementSymbols": ["Ca", "F"]
   },
@@ -131,7 +145,1358 @@
     "vietnameseName": "Apatit",
     "chemicalFormula": "Ca5(PO4)3(F,Cl,OH)",
     "category": "PHOSPHATE",
+    "formulaType": "VARIABLE",
     "mohsHardness": 5.0,
     "elementSymbols": ["Ca", "P", "O", "F", "Cl", "H"]
+  },
+  {
+    "id": "gibbsite",
+    "name": "Gibbsite",
+    "vietnameseName": "Gibbsit",
+    "chemicalFormula": "Al(OH)3",
+    "category": "HYDROXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["Al", "O", "H"]
+  },
+  {
+    "id": "boehmite",
+    "name": "Boehmite",
+    "vietnameseName": "Bemit",
+    "chemicalFormula": "AlO(OH)",
+    "category": "OXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Al", "O", "H"]
+  },
+  {
+    "id": "diaspore",
+    "name": "Diaspore",
+    "vietnameseName": "Diaspor",
+    "chemicalFormula": "AlO(OH)",
+    "category": "OXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.5,
+    "elementSymbols": ["Al", "O", "H"]
+  },
+  {
+    "id": "malachite",
+    "name": "Malachite",
+    "vietnameseName": "Malachit",
+    "chemicalFormula": "Cu2CO3(OH)2",
+    "category": "CARBONATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Cu", "C", "O", "H"]
+  },
+  {
+    "id": "azurite",
+    "name": "Azurite",
+    "vietnameseName": "Azurit",
+    "chemicalFormula": "Cu3(CO3)2(OH)2",
+    "category": "CARBONATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Cu", "C", "O", "H"]
+  },
+  {
+    "id": "chalcocite",
+    "name": "Chalcocite",
+    "vietnameseName": "Chalcocit",
+    "chemicalFormula": "Cu2S",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["Cu", "S"]
+  },
+  {
+    "id": "covellite",
+    "name": "Covellite",
+    "vietnameseName": "Covellit",
+    "chemicalFormula": "CuS",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 1.5,
+    "elementSymbols": ["Cu", "S"]
+  },
+  {
+    "id": "barite",
+    "name": "Barite",
+    "vietnameseName": "Barit",
+    "chemicalFormula": "BaSO4",
+    "category": "SULFATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Ba", "S", "O"]
+  },
+  {
+    "id": "celestite",
+    "name": "Celestite",
+    "vietnameseName": "Celestin",
+    "chemicalFormula": "SrSO4",
+    "category": "SULFATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Sr", "S", "O"]
+  },
+  {
+    "id": "magnesite",
+    "name": "Magnesite",
+    "vietnameseName": "Magnesit",
+    "chemicalFormula": "MgCO3",
+    "category": "CARBONATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 4.0,
+    "elementSymbols": ["Mg", "C", "O"]
+  },
+  {
+    "id": "goethite",
+    "name": "Goethite",
+    "vietnameseName": "Goethit",
+    "chemicalFormula": "FeO(OH)",
+    "category": "HYDROXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.0,
+    "elementSymbols": ["Fe", "O", "H"]
+  },
+  {
+    "id": "pyrolusite",
+    "name": "Pyrolusite",
+    "vietnameseName": "Pyrolusit",
+    "chemicalFormula": "MnO2",
+    "category": "OXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.0,
+    "elementSymbols": ["Mn", "O"]
+  },
+  {
+    "id": "chromite",
+    "name": "Chromite",
+    "vietnameseName": "Chromit",
+    "chemicalFormula": "FeCr2O4",
+    "category": "OXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Fe", "Cr", "O"]
+  },
+  {
+    "id": "ilmenite",
+    "name": "Ilmenite",
+    "vietnameseName": "Ilmenit",
+    "chemicalFormula": "FeTiO3",
+    "category": "OXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Fe", "Ti", "O"]
+  },
+  {
+    "id": "rutile",
+    "name": "Rutile",
+    "vietnameseName": "Rutil",
+    "chemicalFormula": "TiO2",
+    "category": "OXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.5,
+    "elementSymbols": ["Ti", "O"]
+  },
+  {
+    "id": "cassiterite",
+    "name": "Cassiterite",
+    "vietnameseName": "Cassiterit",
+    "chemicalFormula": "SnO2",
+    "category": "OXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.5,
+    "elementSymbols": ["Sn", "O"]
+  },
+  {
+    "id": "stibnite",
+    "name": "Stibnite",
+    "vietnameseName": "Stibnit",
+    "chemicalFormula": "Sb2S3",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.0,
+    "elementSymbols": ["Sb", "S"]
+  },
+  {
+    "id": "cinnabar",
+    "name": "Cinnabar",
+    "vietnameseName": "Chu sa",
+    "chemicalFormula": "HgS",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.25,
+    "elementSymbols": ["Hg", "S"]
+  },
+  {
+    "id": "native_silver",
+    "name": "Native Silver",
+    "vietnameseName": "Bạc tự sinh",
+    "chemicalFormula": "Ag",
+    "category": "NATIVE_ELEMENT",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.75,
+    "elementSymbols": ["Ag"]
+  },
+  {
+    "id": "native_gold",
+    "name": "Native Gold",
+    "vietnameseName": "Vàng tự sinh",
+    "chemicalFormula": "Au",
+    "category": "NATIVE_ELEMENT",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.75,
+    "elementSymbols": ["Au"]
+  },
+  {
+    "id": "scheelite",
+    "name": "Scheelite",
+    "vietnameseName": "Scheelit",
+    "chemicalFormula": "CaWO4",
+    "category": "TUNGSTATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 4.5,
+    "elementSymbols": ["Ca", "W", "O"]
+  },
+  {
+    "id": "wolframite",
+    "name": "Wolframite",
+    "vietnameseName": "Wolframit",
+    "chemicalFormula": "(Fe,Mn)WO4",
+    "category": "OTHER",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Fe", "Mn", "W", "O"]
+  },
+  {
+    "id": "molybdenite",
+    "name": "Molybdenite",
+    "vietnameseName": "Molipdenit",
+    "chemicalFormula": "MoS2",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 1.5,
+    "elementSymbols": ["Mo", "S"]
+  },
+  {
+    "id": "powellite",
+    "name": "Powellite",
+    "vietnameseName": "Powellit",
+    "chemicalFormula": "CaMoO4",
+    "category": "MOLYBDATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Ca", "Mo", "O"]
+  },
+  {
+    "id": "uraninite",
+    "name": "Uraninite",
+    "vietnameseName": "Uraninit",
+    "chemicalFormula": "UO2+x",
+    "category": "OXIDE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["U", "O"]
+  },
+  {
+    "id": "bastnasite",
+    "name": "Bastnasite",
+    "vietnameseName": "Bastnasit",
+    "chemicalFormula": "(Ce,La)CO3F",
+    "category": "CARBONATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 4.5,
+    "elementSymbols": ["Ce", "La", "C", "O", "F"]
+  },
+  {
+    "id": "monazite",
+    "name": "Monazite",
+    "vietnameseName": "Monazit",
+    "chemicalFormula": "(Ce,La,Nd,Th)PO4",
+    "category": "PHOSPHATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 5.0,
+    "elementSymbols": ["Ce", "La", "Nd", "Th", "P", "O"]
+  },
+  {
+    "id": "xenotime",
+    "name": "Xenotime",
+    "vietnameseName": "Xenotim",
+    "chemicalFormula": "YPO4",
+    "category": "PHOSPHATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 4.5,
+    "elementSymbols": ["Y", "P", "O"]
+  },
+  {
+    "id": "zircon",
+    "name": "Zircon",
+    "vietnameseName": "Zircon",
+    "chemicalFormula": "ZrSiO4",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 7.5,
+    "elementSymbols": ["Zr", "Si", "O"]
+  },
+  {
+    "id": "spodumene",
+    "name": "Spodumene",
+    "vietnameseName": "Spodumen",
+    "chemicalFormula": "LiAlSi2O6",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.5,
+    "elementSymbols": ["Li", "Al", "Si", "O"]
+  },
+  {
+    "id": "fluorapatite",
+    "name": "Fluorapatite",
+    "vietnameseName": "Fluorapatit",
+    "chemicalFormula": "Ca5(PO4)3F",
+    "category": "PHOSPHATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.0,
+    "elementSymbols": ["Ca", "P", "O", "F"]
+  },
+  {
+    "id": "halite",
+    "name": "Halite",
+    "vietnameseName": "Halit",
+    "chemicalFormula": "NaCl",
+    "category": "HALIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["Na", "Cl"]
+  },
+  {
+    "id": "sylvite",
+    "name": "Sylvite",
+    "vietnameseName": "Sylvit",
+    "chemicalFormula": "KCl",
+    "category": "HALIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.0,
+    "elementSymbols": ["K", "Cl"]
+  },
+  {
+    "id": "anhydrite",
+    "name": "Anhydrite",
+    "vietnameseName": "Anhydrit",
+    "chemicalFormula": "CaSO4",
+    "category": "SULFATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Ca", "S", "O"]
+  },
+  {
+    "id": "langbeinite",
+    "name": "Langbeinite",
+    "vietnameseName": "Langbeinit",
+    "chemicalFormula": "K2Mg2(SO4)3",
+    "category": "SULFATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["K", "Mg", "S", "O"]
+  },
+  {
+    "id": "borax",
+    "name": "Borax",
+    "vietnameseName": "Hàn the",
+    "chemicalFormula": "Na2B4O7·10H2O",
+    "category": "BORATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["Na", "B", "O", "H"]
+  },
+  {
+    "id": "colemanite",
+    "name": "Colemanite",
+    "vietnameseName": "Colemanit",
+    "chemicalFormula": "Ca2B6O11·5H2O",
+    "category": "BORATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 4.5,
+    "elementSymbols": ["Ca", "B", "O", "H"]
+  },
+  {
+    "id": "ulexite",
+    "name": "Ulexite",
+    "vietnameseName": "Ulexit",
+    "chemicalFormula": "NaCaB5O6(OH)6·5H2O",
+    "category": "BORATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["Na", "Ca", "B", "O", "H"]
+  },
+  {
+    "id": "native_sulfur",
+    "name": "Native Sulfur",
+    "vietnameseName": "Lưu huỳnh tự sinh",
+    "chemicalFormula": "S",
+    "category": "NATIVE_ELEMENT",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.0,
+    "elementSymbols": ["S"]
+  },
+  {
+    "id": "talc",
+    "name": "Talc",
+    "vietnameseName": "Talc",
+    "chemicalFormula": "Mg3Si4O10(OH)2",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 1.0,
+    "elementSymbols": ["Mg", "Si", "O", "H"]
+  },
+  {
+    "id": "beryl",
+    "name": "Beryl",
+    "vietnameseName": "Berin",
+    "chemicalFormula": "Be3Al2Si6O18",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 7.5,
+    "elementSymbols": ["Be", "Al", "Si", "O"]
+  },
+  {
+    "id": "kaolinite",
+    "name": "Kaolinite",
+    "vietnameseName": "Kaolinit",
+    "chemicalFormula": "Al2Si2O5(OH)4",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["Al", "Si", "O", "H"]
+  },
+  {
+    "id": "olivine",
+    "name": "Olivine",
+    "vietnameseName": "Olivin",
+    "chemicalFormula": "(Mg,Fe)2SiO4",
+    "category": "SILICATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 6.5,
+    "elementSymbols": ["Mg", "Fe", "Si", "O"]
+  },
+  {
+    "id": "realgar",
+    "name": "Realgar",
+    "vietnameseName": "Realgar",
+    "chemicalFormula": "As4S4",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 1.5,
+    "elementSymbols": ["As", "S"]
+  },
+  {
+    "id": "orpiment",
+    "name": "Orpiment",
+    "vietnameseName": "Orpiment",
+    "chemicalFormula": "As2S3",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 1.5,
+    "elementSymbols": ["As", "S"]
+  },
+  {
+    "id": "pentlandite",
+    "name": "Pentlandite",
+    "vietnameseName": "Pentlandit",
+    "chemicalFormula": "(Fe,Ni)9S8",
+    "category": "SULFIDE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 4.0,
+    "elementSymbols": ["Fe", "Ni", "S"]
+  },
+  {
+    "id": "millerite",
+    "name": "Millerite",
+    "vietnameseName": "Millerit",
+    "chemicalFormula": "NiS",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Ni", "S"]
+  },
+  {
+    "id": "cobaltite",
+    "name": "Cobaltite",
+    "vietnameseName": "Cobaltit",
+    "chemicalFormula": "CoAsS",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Co", "As", "S"]
+  },
+  {
+    "id": "chromite_variety",
+    "name": "Chromian Spinel",
+    "vietnameseName": "Spinel crom",
+    "chemicalFormula": "(Fe,Mg)(Cr,Al)2O4",
+    "category": "OXIDE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 6.0,
+    "elementSymbols": ["Fe", "Mg", "Cr", "Al", "O"]
+  },
+  {
+    "id": "pentlandite_associated_pyrrhotite",
+    "name": "Pyrrhotite",
+    "vietnameseName": "Pyrrhotit",
+    "chemicalFormula": "Fe(1-x)S",
+    "category": "SULFIDE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 4.0,
+    "elementSymbols": ["Fe", "S"]
+  },
+  {
+    "id": "petalite",
+    "name": "Petalite",
+    "vietnameseName": "Petalit",
+    "chemicalFormula": "LiAlSi4O10",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.5,
+    "elementSymbols": ["Li", "Al", "Si", "O"]
+  },
+  {
+    "id": "lepidolite",
+    "name": "Lepidolite",
+    "vietnameseName": "Lepidolit",
+    "chemicalFormula": "K(Li,Al)3(Si,Al)4O10(F,OH)2",
+    "category": "SILICATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 3.0,
+    "elementSymbols": ["K", "Li", "Al", "Si", "O", "F", "H"]
+  },
+  {
+    "id": "vanadinite",
+    "name": "Vanadinite",
+    "vietnameseName": "Vanadinit",
+    "chemicalFormula": "Pb5(VO4)3Cl",
+    "category": "VANADATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.0,
+    "elementSymbols": ["Pb", "V", "O", "Cl"]
+  },
+  {
+    "id": "carnotite",
+    "name": "Carnotite",
+    "vietnameseName": "Carnotit",
+    "chemicalFormula": "K2(UO2)2(VO4)2·3H2O",
+    "category": "VANADATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 2.0,
+    "elementSymbols": ["K", "U", "O", "V", "H"]
+  },
+  {
+    "id": "roscoelite",
+    "name": "Roscoelite",
+    "vietnameseName": "Roscoelit",
+    "chemicalFormula": "K(V,Mg,Fe)2AlSi3O10(OH)2",
+    "category": "SILICATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["K", "V", "Mg", "Fe", "Al", "Si", "O", "H"]
+  },
+  {
+    "id": "topaz",
+    "name": "Topaz",
+    "vietnameseName": "Hoàng ngọc",
+    "chemicalFormula": "Al2SiO4(F,OH)2",
+    "category": "SILICATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 8.0,
+    "elementSymbols": ["Al", "Si", "O", "F", "H"]
+  },
+  {
+    "id": "corundum",
+    "name": "Corundum",
+    "vietnameseName": "Corindon",
+    "chemicalFormula": "Al2O3",
+    "category": "OXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 9.0,
+    "elementSymbols": ["Al", "O"]
+  },
+  {
+    "id": "spinel",
+    "name": "Spinel",
+    "vietnameseName": "Spinel",
+    "chemicalFormula": "MgAl2O4",
+    "category": "OXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 8.0,
+    "elementSymbols": ["Mg", "Al", "O"]
+  },
+  {
+    "id": "andalusite",
+    "name": "Andalusite",
+    "vietnameseName": "Andalusit",
+    "chemicalFormula": "Al2SiO5",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 7.5,
+    "elementSymbols": ["Al", "Si", "O"]
+  },
+  {
+    "id": "graphite",
+    "name": "Graphite",
+    "vietnameseName": "Than chì",
+    "chemicalFormula": "C",
+    "category": "NATIVE_ELEMENT",
+    "formulaType": "FIXED",
+    "mohsHardness": 1.5,
+    "elementSymbols": ["C"]
+  },
+  {
+    "id": "electrum",
+    "name": "Electrum",
+    "vietnameseName": "Vàng bạc tự nhiên",
+    "chemicalFormula": "(Au,Ag)",
+    "category": "NATIVE_ELEMENT",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["Au", "Ag"]
+  },
+  {
+    "id": "native_platinum",
+    "name": "Native Platinum",
+    "vietnameseName": "Bạch kim tự sinh",
+    "chemicalFormula": "Pt",
+    "category": "NATIVE_ELEMENT",
+    "formulaType": "FIXED",
+    "mohsHardness": 4.5,
+    "elementSymbols": ["Pt"]
+  },
+  {
+    "id": "sperrylite",
+    "name": "Sperrylite",
+    "vietnameseName": "Sperrylit",
+    "chemicalFormula": "PtAs2",
+    "category": "OTHER",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.0,
+    "elementSymbols": ["Pt", "As"]
+  },
+  {
+    "id": "columbite_fe",
+    "name": "Columbite-(Fe)",
+    "vietnameseName": "Columbit sắt",
+    "chemicalFormula": "FeNb2O6",
+    "category": "OXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.0,
+    "elementSymbols": ["Fe", "Nb", "O"]
+  },
+  {
+    "id": "tantalite_fe",
+    "name": "Tantalite-(Fe)",
+    "vietnameseName": "Tantalit sắt",
+    "chemicalFormula": "FeTa2O6",
+    "category": "OXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.5,
+    "elementSymbols": ["Fe", "Ta", "O"]
+  },
+  {
+    "id": "xenotime_yb",
+    "name": "Ytterbium-rich Xenotime",
+    "vietnameseName": "Xenotim giàu ytterbi",
+    "chemicalFormula": "(Y,Yb)PO4",
+    "category": "PHOSPHATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 4.5,
+    "elementSymbols": ["Y", "Yb", "P", "O"]
+  },
+  {
+    "id": "gadolinite",
+    "name": "Gadolinite",
+    "vietnameseName": "Gadolinit",
+    "chemicalFormula": "Be2FeY2Si2O10",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.5,
+    "elementSymbols": ["Be", "Fe", "Y", "Si", "O"]
+  },
+  {
+    "id": "euxenite",
+    "name": "Euxenite",
+    "vietnameseName": "Euxenit",
+    "chemicalFormula": "(Y,Ca,Ce,U,Th)(Nb,Ta,Ti)2O6",
+    "category": "OXIDE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 6.0,
+    "elementSymbols": ["Y", "Ca", "Ce", "U", "Th", "Nb", "Ta", "Ti", "O"]
+  },
+  {
+    "id": "pyrochlore",
+    "name": "Pyrochlore",
+    "vietnameseName": "Pyrochlor",
+    "chemicalFormula": "(Na,Ca)2Nb2O6(OH,F)",
+    "category": "OXIDE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 5.0,
+    "elementSymbols": ["Na", "Ca", "Nb", "O", "H", "F"]
+  },
+  {
+    "id": "loparite",
+    "name": "Loparite",
+    "vietnameseName": "Loparit",
+    "chemicalFormula": "(Ce,Na,Ca)(Ti,Nb)O3",
+    "category": "OXIDE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Ce", "Na", "Ca", "Ti", "Nb", "O"]
+  },
+  {
+    "id": "enargite",
+    "name": "Enargite",
+    "vietnameseName": "Enargit",
+    "chemicalFormula": "Cu3AsS4",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.0,
+    "elementSymbols": ["Cu", "As", "S"]
+  },
+  {
+    "id": "tennantite",
+    "name": "Tennantite",
+    "vietnameseName": "Tennantit",
+    "chemicalFormula": "Cu12As4S13",
+    "category": "SULFIDE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 4.0,
+    "elementSymbols": ["Cu", "As", "S"]
+  },
+  {
+    "id": "tetrahedrite",
+    "name": "Tetrahedrite",
+    "vietnameseName": "Tetrahedrit",
+    "chemicalFormula": "Cu12Sb4S13",
+    "category": "SULFIDE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 4.0,
+    "elementSymbols": ["Cu", "Sb", "S"]
+  },
+  {
+    "id": "bournonite",
+    "name": "Bournonite",
+    "vietnameseName": "Bournonit",
+    "chemicalFormula": "PbCuSbS3",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["Pb", "Cu", "Sb", "S"]
+  },
+  {
+    "id": "enargite_variety",
+    "name": "Luzonite",
+    "vietnameseName": "Luzonit",
+    "chemicalFormula": "Cu3AsS4",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Cu", "As", "S"]
+  },
+  {
+    "id": "bismuthinite",
+    "name": "Bismuthinite",
+    "vietnameseName": "Bismuthinit",
+    "chemicalFormula": "Bi2S3",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.0,
+    "elementSymbols": ["Bi", "S"]
+  },
+  {
+    "id": "native_bismuth",
+    "name": "Native Bismuth",
+    "vietnameseName": "Bismuth tự sinh",
+    "chemicalFormula": "Bi",
+    "category": "NATIVE_ELEMENT",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.25,
+    "elementSymbols": ["Bi"]
+  },
+  {
+    "id": "wulfenite",
+    "name": "Wulfenite",
+    "vietnameseName": "Wulfenit",
+    "chemicalFormula": "PbMoO4",
+    "category": "OTHER",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.0,
+    "elementSymbols": ["Pb", "Mo", "O"]
+  },
+  {
+    "id": "native_selenium",
+    "name": "Native Selenium",
+    "vietnameseName": "Selenium tự sinh",
+    "chemicalFormula": "Se",
+    "category": "NATIVE_ELEMENT",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.0,
+    "elementSymbols": ["Se"]
+  },
+  {
+    "id": "berthierite",
+    "name": "Berthierite",
+    "vietnameseName": "Berthierit",
+    "chemicalFormula": "FeSb2S4",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["Fe", "Sb", "S"]
+  },
+  {
+    "id": "stannite",
+    "name": "Stannite",
+    "vietnameseName": "Stannit",
+    "chemicalFormula": "Cu2FeSnS4",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 4.0,
+    "elementSymbols": ["Cu", "Fe", "Sn", "S"]
+  },
+  {
+    "id": "greenockite",
+    "name": "Greenockite",
+    "vietnameseName": "Greenockit",
+    "chemicalFormula": "CdS",
+    "category": "SULFIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.0,
+    "elementSymbols": ["Cd", "S"]
+  },
+  {
+    "id": "native_copper",
+    "name": "Native Copper",
+    "vietnameseName": "Đồng tự sinh",
+    "chemicalFormula": "Cu",
+    "category": "NATIVE_ELEMENT",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["Cu"]
+  },
+  {
+    "id": "native_antimony",
+    "name": "Native Antimony",
+    "vietnameseName": "Antimon tự sinh",
+    "chemicalFormula": "Sb",
+    "category": "NATIVE_ELEMENT",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.0,
+    "elementSymbols": ["Sb"]
+  },
+  {
+    "id": "native_arsenic",
+    "name": "Native Arsenic",
+    "vietnameseName": "Arsen tự sinh",
+    "chemicalFormula": "As",
+    "category": "NATIVE_ELEMENT",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["As"]
+  },
+  {
+    "id": "anglesite",
+    "name": "Anglesite",
+    "vietnameseName": "Anglesit",
+    "chemicalFormula": "PbSO4",
+    "category": "SULFATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.0,
+    "elementSymbols": ["Pb", "S", "O"]
+  },
+  {
+    "id": "cerussite",
+    "name": "Cerussite",
+    "vietnameseName": "Cerussit",
+    "chemicalFormula": "PbCO3",
+    "category": "CARBONATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Pb", "C", "O"]
+  },
+  {
+    "id": "smithsonite",
+    "name": "Smithsonite",
+    "vietnameseName": "Smithsonit",
+    "chemicalFormula": "ZnCO3",
+    "category": "CARBONATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 4.5,
+    "elementSymbols": ["Zn", "C", "O"]
+  },
+  {
+    "id": "hemimorphite",
+    "name": "Hemimorphite",
+    "vietnameseName": "Hemimorphit",
+    "chemicalFormula": "Zn4Si2O7·H2O",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.0,
+    "elementSymbols": ["Zn", "Si", "O", "H"]
+  },
+  {
+    "id": "willemite",
+    "name": "Willemite",
+    "vietnameseName": "Willemit",
+    "chemicalFormula": "Zn2SiO4",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Zn", "Si", "O"]
+  },
+  {
+    "id": "rhodochrosite",
+    "name": "Rhodochrosite",
+    "vietnameseName": "Rhodochrosit",
+    "chemicalFormula": "MnCO3",
+    "category": "CARBONATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Mn", "C", "O"]
+  },
+  {
+    "id": "siderite",
+    "name": "Siderite",
+    "vietnameseName": "Siderit",
+    "chemicalFormula": "FeCO3",
+    "category": "CARBONATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 4.0,
+    "elementSymbols": ["Fe", "C", "O"]
+  },
+  {
+    "id": "manganite",
+    "name": "Manganite",
+    "vietnameseName": "Manganit",
+    "chemicalFormula": "MnO(OH)",
+    "category": "HYDROXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 4.0,
+    "elementSymbols": ["Mn", "O", "H"]
+  },
+  {
+    "id": "hausmannite",
+    "name": "Hausmannite",
+    "vietnameseName": "Hausmannit",
+    "chemicalFormula": "Mn3O4",
+    "category": "OXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Mn", "O"]
+  },
+  {
+    "id": "rhodonite",
+    "name": "Rhodonite",
+    "vietnameseName": "Rhodonit",
+    "chemicalFormula": "(Mn,Fe,Mg,Ca)SiO3",
+    "category": "SILICATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 6.0,
+    "elementSymbols": ["Mn", "Fe", "Mg", "Ca", "Si", "O"]
+  },
+  {
+    "id": "witherite",
+    "name": "Witherite",
+    "vietnameseName": "Witherit",
+    "chemicalFormula": "BaCO3",
+    "category": "CARBONATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Ba", "C", "O"]
+  },
+  {
+    "id": "strontianite",
+    "name": "Strontianite",
+    "vietnameseName": "Strontianit",
+    "chemicalFormula": "SrCO3",
+    "category": "CARBONATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Sr", "C", "O"]
+  },
+  {
+    "id": "chlorargyrite",
+    "name": "Chlorargyrite",
+    "vietnameseName": "Clorargyrit",
+    "chemicalFormula": "AgCl",
+    "category": "HALIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.0,
+    "elementSymbols": ["Ag", "Cl"]
+  },
+  {
+    "id": "atacamite",
+    "name": "Atacamite",
+    "vietnameseName": "Atacamit",
+    "chemicalFormula": "Cu2Cl(OH)3",
+    "category": "HALIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.5,
+    "elementSymbols": ["Cu", "Cl", "O", "H"]
+  },
+  {
+    "id": "brochantite",
+    "name": "Brochantite",
+    "vietnameseName": "Brochantit",
+    "chemicalFormula": "Cu4SO4(OH)6",
+    "category": "SULFATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 4.0,
+    "elementSymbols": ["Cu", "S", "O", "H"]
+  },
+  {
+    "id": "albite",
+    "name": "Albite",
+    "vietnameseName": "Albit",
+    "chemicalFormula": "NaAlSi3O8",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.0,
+    "elementSymbols": ["Na", "Al", "Si", "O"]
+  },
+  {
+    "id": "orthoclase",
+    "name": "Orthoclase",
+    "vietnameseName": "Orthoclas",
+    "chemicalFormula": "KAlSi3O8",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.0,
+    "elementSymbols": ["K", "Al", "Si", "O"]
+  },
+  {
+    "id": "microcline",
+    "name": "Microcline",
+    "vietnameseName": "Microclin",
+    "chemicalFormula": "KAlSi3O8",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.0,
+    "elementSymbols": ["K", "Al", "Si", "O"]
+  },
+  {
+    "id": "almandine",
+    "name": "Almandine",
+    "vietnameseName": "Almandin",
+    "chemicalFormula": "Fe3Al2(SiO4)3",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 7.5,
+    "elementSymbols": ["Fe", "Al", "Si", "O"]
+  },
+  {
+    "id": "pyrope",
+    "name": "Pyrope",
+    "vietnameseName": "Pyrop",
+    "chemicalFormula": "Mg3Al2(SiO4)3",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 7.5,
+    "elementSymbols": ["Mg", "Al", "Si", "O"]
+  },
+  {
+    "id": "leucite",
+    "name": "Leucite",
+    "vietnameseName": "Leucit",
+    "chemicalFormula": "KAlSi2O6",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["K", "Al", "Si", "O"]
+  },
+  {
+    "id": "nepheline",
+    "name": "Nepheline",
+    "vietnameseName": "Nephelin",
+    "chemicalFormula": "(Na,K)AlSiO4",
+    "category": "SILICATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Na", "K", "Al", "Si", "O"]
+  },
+  {
+    "id": "spessartine",
+    "name": "Spessartine",
+    "vietnameseName": "Spessartin",
+    "chemicalFormula": "Mn3Al2(SiO4)3",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 7.0,
+    "elementSymbols": ["Mn", "Al", "Si", "O"]
+  },
+  {
+    "id": "grossular",
+    "name": "Grossular",
+    "vietnameseName": "Grossular",
+    "chemicalFormula": "Ca3Al2(SiO4)3",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 7.0,
+    "elementSymbols": ["Ca", "Al", "Si", "O"]
+  },
+  {
+    "id": "kyanite",
+    "name": "Kyanite",
+    "vietnameseName": "Disthen",
+    "chemicalFormula": "Al2SiO5",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.0,
+    "elementSymbols": ["Al", "Si", "O"]
+  },
+  {
+    "id": "amblygonite",
+    "name": "Amblygonite",
+    "vietnameseName": "Amblygonit",
+    "chemicalFormula": "LiAlPO4F",
+    "category": "PHOSPHATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.0,
+    "elementSymbols": ["Li", "Al", "P", "O", "F"]
+  },
+  {
+    "id": "danburite",
+    "name": "Danburite",
+    "vietnameseName": "Danburit",
+    "chemicalFormula": "CaB2Si2O8",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 7.0,
+    "elementSymbols": ["Ca", "B", "Si", "O"]
+  },
+  {
+    "id": "chromian_tourmaline",
+    "name": "Chromium-bearing Tourmaline",
+    "vietnameseName": "Tourmalin chứa Crom",
+    "chemicalFormula": "Na(Mg,Fe)3Al6(BO3)3Si6O18(OH)4",
+    "category": "SILICATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 7.5,
+    "elementSymbols": ["Na", "Mg", "Fe", "Al", "B", "O", "Si", "H"]
+  },
+  {
+    "id": "baddeleyite",
+    "name": "Baddeleyite",
+    "vietnameseName": "Baddeleyit",
+    "chemicalFormula": "ZrO2",
+    "category": "OXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.5,
+    "elementSymbols": ["Zr", "O"]
+  },
+  {
+    "id": "titanite",
+    "name": "Titanite",
+    "vietnameseName": "Titanit",
+    "chemicalFormula": "CaTiSiO5",
+    "category": "SILICATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Ca", "Ti", "Si", "O", "Cr"]
+  },
+  {
+    "id": "enstatite",
+    "name": "Enstatite",
+    "vietnameseName": "Enstatit",
+    "chemicalFormula": "MgSiO3",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Mg", "Si", "O"]
+  },
+  {
+    "id": "diopside",
+    "name": "Diopside",
+    "vietnameseName": "Diopsit",
+    "chemicalFormula": "CaMgSi2O6",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Ca", "Mg", "Si", "O"]
+  },
+  {
+    "id": "augite",
+    "name": "Augite",
+    "vietnameseName": "Augit",
+    "chemicalFormula": "(Ca,Na)(Mg,Fe,Al,Ti)(Si,Al)2O6",
+    "category": "SILICATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 6.0,
+    "elementSymbols": ["Ca", "Na", "Mg", "Fe", "Al", "Ti", "Si", "O"]
+  },
+  {
+    "id": "muscovite",
+    "name": "Muscovite",
+    "vietnameseName": "Muscovit",
+    "chemicalFormula": "KAl2(AlSi3O10)(OH)2",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["K", "Al", "Si", "O", "H"]
+  },
+  {
+    "id": "biotite",
+    "name": "Biotite",
+    "vietnameseName": "Biotit",
+    "chemicalFormula": "K(Mg,Fe)3AlSi3O10(OH)2",
+    "category": "SILICATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["K", "Mg", "Fe", "Al", "Si", "O", "H"]
+  },
+  {
+    "id": "staurolite",
+    "name": "Staurolite",
+    "vietnameseName": "Staurolit",
+    "chemicalFormula": "Fe2Al9Si4O22(OH)2",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 7.0,
+    "elementSymbols": ["Fe", "Al", "Si", "O", "H"]
+  },
+  {
+    "id": "sillimanite",
+    "name": "Sillimanite",
+    "vietnameseName": "Sillimanit",
+    "chemicalFormula": "Al2SiO5",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 7.0,
+    "elementSymbols": ["Al", "Si", "O"]
+  },
+  {
+    "id": "andradite",
+    "name": "Andradite",
+    "vietnameseName": "Andradit",
+    "chemicalFormula": "Ca3Fe2(SiO4)3",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 7.0,
+    "elementSymbols": ["Ca", "Fe", "Si", "O"]
+  },
+  {
+    "id": "zoisite",
+    "name": "Zoisite",
+    "vietnameseName": "Zoisit",
+    "chemicalFormula": "Ca2Al3(SiO4)(Si2O7)O(OH)",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.5,
+    "elementSymbols": ["Ca", "Al", "Si", "O", "H"]
+  },
+  {
+    "id": "epidote",
+    "name": "Epidote",
+    "vietnameseName": "Epidote",
+    "chemicalFormula": "Ca2(Al,Fe)3(SiO4)3(OH)",
+    "category": "SILICATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 6.5,
+    "elementSymbols": ["Ca", "Al", "Fe", "Si", "O", "H"]
+  },
+  {
+    "id": "wollastonite",
+    "name": "Wollastonite",
+    "vietnameseName": "Wollastonit",
+    "chemicalFormula": "CaSiO3",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.0,
+    "elementSymbols": ["Ca", "Si", "O"]
+  },
+  {
+    "id": "perovskite",
+    "name": "Perovskite",
+    "vietnameseName": "Perovskit",
+    "chemicalFormula": "CaTiO3",
+    "category": "OXIDE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Ca", "Ti", "O"]
+  },
+  {
+    "id": "tremolite",
+    "name": "Tremolite",
+    "vietnameseName": "Tremolit",
+    "chemicalFormula": "Ca2Mg5Si8O22(OH)2",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Ca", "Mg", "Si", "O", "H"]
+  },
+  {
+    "id": "actinolite",
+    "name": "Actinolite",
+    "vietnameseName": "Actinolit",
+    "chemicalFormula": "Ca2(Mg,Fe)5Si8O22(OH)2",
+    "category": "SILICATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Ca", "Mg", "Fe", "Si", "O", "H"]
+  },
+  {
+    "id": "glaucophane",
+    "name": "Glaucophane",
+    "vietnameseName": "Glaucophan",
+    "chemicalFormula": "Na2Mg3Al2Si8O22(OH)2",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 6.0,
+    "elementSymbols": ["Na", "Mg", "Al", "Si", "O", "H"]
+  },
+  {
+    "id": "cordierite",
+    "name": "Cordierite",
+    "vietnameseName": "Cordierit",
+    "chemicalFormula": "Mg2Al4Si5O18",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 7.5,
+    "elementSymbols": ["Mg", "Al", "Si", "O"]
+  },
+  {
+    "id": "natrolite",
+    "name": "Natrolite",
+    "vietnameseName": "Natrolit",
+    "chemicalFormula": "Na2Al2Si3O10·2H2O",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Na", "Al", "Si", "O", "H"]
+  },
+  {
+    "id": "analcime",
+    "name": "Analcime",
+    "vietnameseName": "Analcim",
+    "chemicalFormula": "NaAlSi2O6·H2O",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 5.5,
+    "elementSymbols": ["Na", "Al", "Si", "O", "H"]
+  },
+  {
+    "id": "serpentine",
+    "name": "Serpentine",
+    "vietnameseName": "Serpentin",
+    "chemicalFormula": "Mg3Si2O5(OH)4",
+    "category": "SILICATE",
+    "formulaType": "FIXED",
+    "mohsHardness": 3.0,
+    "elementSymbols": ["Mg", "Si", "O", "H"]
+  },
+  {
+    "id": "chrysocolla",
+    "name": "Chrysocolla",
+    "vietnameseName": "Chrysocolla",
+    "chemicalFormula": "(Cu,Al)2H2Si2O5(OH)4·nH2O",
+    "category": "SILICATE",
+    "formulaType": "VARIABLE",
+    "mohsHardness": 2.5,
+    "elementSymbols": ["Cu", "Al", "H", "Si", "O"]
   }
 ]

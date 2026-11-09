@@ -1,10 +1,11 @@
 package com.carlic.RmpCore;
 
+import com.carlic.RmpCore.chemistry.compound.ChemicalFormulaParser;
 import com.carlic.RmpCore.registry.ModItems;
 import com.carlic.RmpCore.block.ModBlocks;
-import com.carlic.RmpCore.chemistry.element.ElementDatabase;
-import com.carlic.RmpCore.chemistry.mineral.MineralDatabase;
-import com.carlic.RmpCore.chemistry.compound.CompoundDatabase;
+import java.util.Map;
+//import com.carlic.RmpCore.chemistry.ore.OreDatabase;
+import com.carlic.RmpCore.chemistry.ChemistryManager;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -42,8 +43,9 @@ import org.slf4j.Logger;
 public class RmpCore {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "rmp_core";
+
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "rmp_core" namespace
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MOD_ID);
     // Create a Deferred Register to hold Items which will all be registered under the "rmp_core" namespace
@@ -69,6 +71,8 @@ public class RmpCore {
                 output.accept(ModBlocks.SILICON_ORE_ITEM.get());
                 output.accept(ModItems.SILICON_ORE_CHUNK.get());
             }).build());
+
+    private ChemistryManager chemistryManager;
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -102,33 +106,156 @@ public class RmpCore {
     private void commonSetup(final FMLCommonSetupEvent event) {
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
-        ElementDatabase database = ElementDatabase.load();
+        chemistryManager = ChemistryManager.load();
+
 
         LOGGER.info(
-                "RMP Chemistry Database loaded: {} elements.",
-                database.getElementCount()
+                "RMP Chemistry System initialized: {} elements, {} minerals, {} compounds, {} ores.",
+                chemistryManager.getElements().getElementCount(),
+                chemistryManager.getMinerals().getMineralCount(),
+                chemistryManager.getCompounds().getCompoundCount(),
+                chemistryManager.getOres().getOreCount()
         );
-        MineralDatabase mineralDatabase =
-                MineralDatabase.load(database);
-
-        LOGGER.info(
-                "RMP Mineral Database loaded: {} minerals.",
-                mineralDatabase.getMineralCount()
-        );
-        CompoundDatabase compoundDatabase =
-                CompoundDatabase.load(database);
-
-        LOGGER.info(
-                "RMP Compound Database loaded: {} compounds.",
-                compoundDatabase.getCompoundCount()
-        );
-
+        testAllOreGrades();
+        testTargetElementGrades();
         if (Config.logDirtBlock) LOGGER.info("DIRT BLOCK >> {}", BuiltInRegistries.BLOCK.getKey(Blocks.DIRT));
 
         LOGGER.info(Config.magicNumberIntroduction + Config.magicNumber);
 
         Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
+
+
     }
+
+
+    private void testAllOreGrades() {
+        LOGGER.info("========== RMP ORE VALIDATION ==========");
+
+        int totalOres = chemistryManager.getOres().getAll().size();
+        int passedOres = 0;
+        int failedOres = 0;
+
+        for (var ore : chemistryManager.getOres().getAll()) {
+            try {
+                var elementGrades =
+                        chemistryManager.getOreGradeCalculator()
+                                .calculateAllElementGrades(ore.id());
+
+                boolean valuesValid = !elementGrades.isEmpty()
+                        && elementGrades.values().stream()
+                        .allMatch(value ->
+                                value != null
+                                        && Double.isFinite(value)
+                                        && value >= 0.0
+                        );
+
+                double total = valuesValid
+                        ? elementGrades.values()
+                        .stream()
+                        .mapToDouble(Double::doubleValue)
+                        .sum()
+                        : Double.NaN;
+
+                boolean valid = valuesValid
+                        && Double.isFinite(total)
+                        && Math.abs(total - 100.0) <= 0.001;
+
+                if (valid) {
+                    passedOres++;
+
+                    LOGGER.info(
+                            "[PASS] {}: elemental mass balance = {}%",
+                            ore.name(), total
+                    );
+                } else {
+                    failedOres++;
+
+                    LOGGER.error(
+                            "[FAIL] {}: invalid elemental mass balance = {}%",
+                            ore.name(), total
+                    );
+                }
+
+            } catch (Exception e) {
+                failedOres++;
+
+                LOGGER.error(
+                        "[FAIL] {}: could not calculate ore grade",
+                        ore.name(), e
+                );
+            }
+        }
+
+        LOGGER.info(
+                "RMP Ore Validation Result: {}/{} passed, {} failed.",
+                passedOres, totalOres, failedOres
+        );
+
+        LOGGER.info("========================================");
+    }
+
+    private void testTargetElementGrades() {
+        LOGGER.info("========== RMP TARGET ELEMENT GRADE TEST ==========");
+
+        String[][] gradeTests = {
+                {"iron_ore", "Fe"},
+                {"copper_ore", "Cu"},
+                {"lead_ore", "Pb"},
+                {"zinc_ore", "Zn"},
+                {"gold_ore", "Au"},
+                {"silver_ore", "Ag"},
+                {"nickel_ore", "Ni"},
+                {"cobalt_ore", "Co"},
+                {"tin_ore", "Sn"},
+                {"chromium_ore", "Cr"},
+                {"manganese_ore", "Mn"},
+                {"titanium_ore", "Ti"},
+                {"tungsten_ore", "W"},
+                {"molybdenum_ore", "Mo"}
+        };
+
+        int passed = 0;
+        int failed = 0;
+
+        for (String[] test : gradeTests) {
+            try {
+                double grade = chemistryManager.getOreGradeCalculator()
+                        .calculateElementGrade(test[0], test[1]);
+
+                if (Double.isFinite(grade) && grade > 0.0 && grade <= 100.0) {
+                    passed++;
+
+                    LOGGER.info(
+                            "[GRADE PASS] {} | {} = {}%",
+                            test[0], test[1], grade
+                    );
+                } else {
+                    failed++;
+
+                    LOGGER.error(
+                            "[GRADE FAIL] {} | {} = {}%",
+                            test[0], test[1], grade
+                    );
+                }
+
+            } catch (Exception e) {
+                failed++;
+
+                LOGGER.error(
+                        "[GRADE FAIL] {} | {}: calculation error",
+                        test[0], test[1], e
+                );
+            }
+        }
+
+        LOGGER.info(
+                "RMP Target Grade Test Result: {}/{} passed, {} failed.",
+                passed, gradeTests.length, failed
+        );
+
+        LOGGER.info("===================================================");
+    }
+
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {

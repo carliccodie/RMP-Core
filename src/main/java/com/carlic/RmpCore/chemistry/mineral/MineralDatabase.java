@@ -1,19 +1,18 @@
 package com.carlic.RmpCore.chemistry.mineral;
 
 import com.carlic.RmpCore.RmpCore;
+import com.carlic.RmpCore.chemistry.compound.ChemicalFormulaParser;
 import com.carlic.RmpCore.chemistry.element.ElementDatabase;
 import com.google.gson.Gson;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
-import com.google.gson.JsonParseException;
+import com.google.gson.reflect.TypeToken;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 
@@ -22,15 +21,12 @@ public final class MineralDatabase {
     private static final String RESOURCE_PATH =
             "/data/rmp_core/chemistry/minerals.json";
 
-    private final List<MineralData> minerals;
-    private final Map<String, MineralData> mineralsById;
+    private static final Gson GSON = new Gson();
 
-    private MineralDatabase(
-            List<MineralData> minerals,
-            Map<String, MineralData> mineralsById
-    ) {
+    private final List<MineralData> minerals;
+
+    private MineralDatabase(List<MineralData> minerals) {
         this.minerals = List.copyOf(minerals);
-        this.mineralsById = Map.copyOf(mineralsById);
     }
 
     public static MineralDatabase load(ElementDatabase elementDatabase) {
@@ -41,158 +37,142 @@ public final class MineralDatabase {
             );
         }
 
-        try (InputStream input =
+        try (InputStream inputStream =
                      RmpCore.class.getResourceAsStream(RESOURCE_PATH)) {
 
-            if (input == null) {
+            if (inputStream == null) {
                 throw new IllegalStateException(
-                        "Cannot find mineral resource: " + RESOURCE_PATH
+                        "Cannot find resource: " + RESOURCE_PATH
                 );
             }
 
-            try (InputStreamReader reader =
-                         new InputStreamReader(input, StandardCharsets.UTF_8)) {
+            Type listType =
+                    new TypeToken<List<MineralData>>() {}.getType();
 
-                JsonElement json = JsonParser.parseReader(reader);
+            List<MineralData> loadedMinerals = GSON.fromJson(
+                    new InputStreamReader(
+                            inputStream,
+                            StandardCharsets.UTF_8
+                    ),
+                    listType
+            );
 
-                if (!json.isJsonArray()) {
-                    throw new IllegalStateException(
-                            "minerals.json must contain a JSON array."
-                    );
-                }
-
-                MineralData[] data = new Gson().fromJson(
-                        json,
-                        MineralData[].class
-                );
-
-                if (data == null) {
-                    throw new IllegalStateException(
-                            "Failed to read minerals.json."
-                    );
-                }
-
-                return createAndValidate(
-                        List.of(data),
-                        elementDatabase
+            if (loadedMinerals == null || loadedMinerals.isEmpty()) {
+                throw new IllegalStateException(
+                        "Mineral database is empty."
                 );
             }
 
-        } catch (IOException | JsonParseException e) {
+            validateMinerals(loadedMinerals, elementDatabase);
+
+            MineralDatabase database = new MineralDatabase(loadedMinerals);
+
+            RmpCore.LOGGER.info(
+                    "RMP Mineral Database loaded: {} minerals.",
+                    database.getMineralCount()
+            );
+
+            return database;
+
+        } catch (Exception exception) {
             throw new IllegalStateException(
-                    "Failed to load mineral database.",
-                    e
+                    "Failed to load RMP Mineral Database.",
+                    exception
             );
         }
     }
 
-    private static MineralDatabase createAndValidate(
+    private static void validateMinerals(
             List<MineralData> minerals,
             ElementDatabase elementDatabase
     ) {
-
-        Map<String, MineralData> byId = new HashMap<>();
+        Set<String> ids = new HashSet<>();
         Set<String> names = new HashSet<>();
 
         for (MineralData mineral : minerals) {
 
             if (mineral == null) {
                 throw new IllegalStateException(
-                        "Found a null mineral in minerals.json."
+                        "Mineral database contains a null entry."
                 );
             }
 
-            if (mineral.id() == null || mineral.id().isBlank()) {
-                throw new IllegalStateException(
-                        "Mineral has an invalid ID."
-                );
-            }
-
-            if (mineral.name() == null || mineral.name().isBlank()) {
-                throw new IllegalStateException(
-                        "Mineral " + mineral.id() + " has no name."
-                );
-            }
-
-            if (mineral.vietnameseName() == null
-                    || mineral.vietnameseName().isBlank()) {
-                throw new IllegalStateException(
-                        "Mineral " + mineral.id()
-                                + " has no Vietnamese name."
-                );
-            }
-
-            if (mineral.chemicalFormula() == null
-                    || mineral.chemicalFormula().isBlank()) {
-                throw new IllegalStateException(
-                        "Mineral " + mineral.id()
-                                + " has no chemical formula."
-                );
-            }
-
-            if (mineral.category() == null) {
-                throw new IllegalStateException(
-                        "Mineral " + mineral.id()
-                                + " has an invalid category."
-                );
-            }
-
-            if (!Double.isFinite(mineral.mohsHardness())
-                    || mineral.mohsHardness() <= 0
-                    || mineral.mohsHardness() > 10) {
-                throw new IllegalStateException(
-                        "Invalid Mohs hardness for " + mineral.id()
-                );
-            }
-
-            if (mineral.elementSymbols() == null
-                    || mineral.elementSymbols().isEmpty()) {
-                throw new IllegalStateException(
-                        "Mineral " + mineral.id()
-                                + " has no element symbols."
-                );
-            }
-
-            Set<String> checkedSymbols = new HashSet<>();
-
-            for (String symbol : mineral.elementSymbols()) {
-
-                if (symbol == null || symbol.isBlank()) {
-                    throw new IllegalStateException(
-                            "Invalid element symbol in mineral "
-                                    + mineral.id()
-                    );
-                }
-
-                if (!checkedSymbols.add(symbol)) {
-                    throw new IllegalStateException(
-                            "Duplicate element symbol " + symbol
-                                    + " in mineral " + mineral.id()
-                    );
-                }
-
-                if (elementDatabase.getBySymbol(symbol) == null) {
-                    throw new IllegalStateException(
-                            "Unknown element symbol " + symbol
-                                    + " in mineral " + mineral.id()
-                    );
-                }
-            }
-
-            if (byId.putIfAbsent(mineral.id(), mineral) != null) {
+            if (!ids.add(mineral.id())) {
                 throw new IllegalStateException(
                         "Duplicate mineral ID: " + mineral.id()
                 );
             }
 
-            if (!names.add(mineral.name())) {
+            String normalizedName =
+                    mineral.name().toLowerCase(Locale.ROOT);
+
+            if (!names.add(normalizedName)) {
                 throw new IllegalStateException(
                         "Duplicate mineral name: " + mineral.name()
                 );
             }
+
+            Set<String> elementSymbols = new HashSet<>();
+
+            for (String symbol : mineral.elementSymbols()) {
+
+                if (symbol == null || symbol.isBlank()) {
+                    throw new IllegalStateException(
+                            "Blank element symbol in mineral: "
+                                    + mineral.id()
+                    );
+                }
+
+                if (elementDatabase.getBySymbol(symbol) == null) {
+                    throw new IllegalStateException(
+                            "Unknown element '" + symbol
+                                    + "' in mineral '" + mineral.id() + "'."
+                    );
+                }
+
+                if (!elementSymbols.add(symbol)) {
+                    throw new IllegalStateException(
+                            "Duplicate element symbol '" + symbol
+                                    + "' in mineral '" + mineral.id() + "'."
+                    );
+                }
+            }
+
+            if (mineral.formulaType() == MineralFormulaType.FIXED) {
+                validateFixedFormula(mineral, elementSymbols);
+            }
+        }
+    }
+
+    private static void validateFixedFormula(
+            MineralData mineral,
+            Set<String> declaredSymbols
+    ) {
+        Map<String, Integer> composition;
+
+        try {
+            composition = ChemicalFormulaParser.parse(
+                    mineral.chemicalFormula()
+            );
+        } catch (Exception exception) {
+            throw new IllegalStateException(
+                    "Invalid fixed chemical formula for mineral '"
+                            + mineral.id() + "': "
+                            + mineral.chemicalFormula(),
+                    exception
+            );
         }
 
-        return new MineralDatabase(minerals, byId);
+        if (!composition.keySet().equals(declaredSymbols)) {
+            throw new IllegalStateException(
+                    "Element symbols do not match chemical formula for mineral '"
+                            + mineral.id()
+                            + "'. Formula elements: "
+                            + composition.keySet()
+                            + ", declared elements: "
+                            + declaredSymbols
+            );
+        }
     }
 
     public List<MineralData> getAll() {
@@ -200,11 +180,14 @@ public final class MineralDatabase {
     }
 
     public MineralData getById(String id) {
-        if (id == null) {
+        if (id == null || id.isBlank()) {
             return null;
         }
 
-        return mineralsById.get(id);
+        return minerals.stream()
+                .filter(mineral -> mineral.id().equals(id))
+                .findFirst()
+                .orElse(null);
     }
 
     public int getMineralCount() {

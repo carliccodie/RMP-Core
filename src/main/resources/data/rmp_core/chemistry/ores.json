@@ -1,0 +1,179 @@
+
+[
+  {
+    "id": "iron_ore",
+    "name": "Iron Ore",
+    "vietnameseName": "Quặng sắt",
+    "category": "METALLIC",
+    "mineralComposition": {
+      "hematite": 60.0,
+      "magnetite": 10.0,
+      "quartz": 30.0
+    },
+    "description": "An iron-bearing ore containing hematite and magnetite."
+  },
+  {
+    "id": "copper_ore",
+    "name": "Copper Ore",
+    "vietnameseName": "Quặng đồng",
+    "category": "METALLIC",
+    "mineralComposition": {
+      "chalcopyrite": 60.0,
+      "bornite": 15.0,
+      "quartz": 25.0
+    },
+    "description": "A copper-bearing ore containing chalcopyrite and bornite."
+  },
+  {
+    "id": "lead_ore",
+    "name": "Lead Ore",
+    "vietnameseName": "Quặng chì",
+    "category": "METALLIC",
+    "mineralComposition": {
+      "galena": 70.0,
+      "quartz": 30.0
+    },
+    "description": "A lead-bearing ore primarily containing galena."
+  },
+  {
+    "id": "zinc_ore",
+    "name": "Zinc Ore",
+    "vietnameseName": "Quặng kẽm",
+    "category": "METALLIC",
+    "mineralComposition": {
+      "sphalerite": 65.0,
+      "pyrite": 10.0,
+      "quartz": 25.0
+    },
+    "description": "A zinc-bearing ore containing sphalerite."
+  },
+  {
+    "id": "fluorite_ore",
+    "name": "Fluorite Ore",
+    "vietnameseName": "Quặng Fluorit",
+    "category": "NON_METALLIC",
+    "mineralComposition": {
+      "fluorite": 75.0,
+      "quartz": 25.0
+    },
+    "description": "An industrial mineral ore containing fluorite."
+  },
+  {
+    "id": "gold_ore",
+    "name": "Gold Ore",
+    "vietnameseName": "Quặng vàng",
+    "category": "METALLIC",
+    "mineralComposition": {
+      "native_gold": 35.0,
+      "pyrite": 15.0,
+      "quartz": 50.0
+    },
+    "description": "Gold-bearing ore containing native gold associated with quartz and sulfide minerals."
+  },
+  {
+    "id": "silver_ore",
+    "name": "Silver Ore",
+    "vietnameseName": "Quặng bạc",
+    "category": "METALLIC",
+    "mineralComposition": {
+      "native_silver": 25.0,
+      "galena": 35.0,
+      "quartz": 40.0
+    },
+    "description": "Silver-bearing ore represented by native silver, argentiferous lead sulfide, and quartz gangue."
+  },
+  {
+    "id": "nickel_ore",
+    "name": "Nickel Ore",
+    "vietnameseName": "Quặng niken",
+    "category": "INDUSTRIAL",
+    "mineralComposition": {
+      "millerite": 60.0,
+      "pyrite": 20.0,
+      "quartz": 20.0
+    },
+    "description": "Nickel ore represented by millerite with pyrite and quartz gangue."
+  },
+  {
+    "id": "cobalt_ore",
+    "name": "Cobalt Ore",
+    "vietnameseName": "Quặng coban",
+    "category": "INDUSTRIAL",
+    "mineralComposition": {
+      "cobaltite": 45.0,
+      "pyrite": 25.0,
+      "quartz": 30.0
+    },
+    "description": "Cobalt-bearing sulfide ore represented by cobaltite with pyrite and quartz."
+  },
+  {
+    "id": "tin_ore",
+    "name": "Tin Ore",
+    "vietnameseName": "Quặng thiếc",
+    "category": "INDUSTRIAL",
+    "mineralComposition": {
+      "cassiterite": 75.0,
+      "quartz": 25.0
+    },
+    "description": "Tin ore dominated by cassiterite with quartz gangue."
+  },
+  {
+    "id": "chromium_ore",
+    "name": "Chromium Ore",
+    "vietnameseName": "Quặng crom",
+    "category": "INDUSTRIAL",
+    "mineralComposition": {
+      "chromite": 80.0,
+      "spinel": 20.0
+    },
+    "description": "Chromium ore dominated by chromite with associated spinel minerals."
+  },
+  {
+    "id": "manganese_ore",
+    "name": "Manganese Ore",
+    "vietnameseName": "Quặng mangan",
+    "category": "INDUSTRIAL",
+    "mineralComposition": {
+      "pyrolusite": 65.0,
+      "rhodochrosite": 15.0,
+      "quartz": 20.0
+    },
+    "description": "Manganese ore containing oxide and carbonate minerals with quartz gangue."
+  },
+  {
+    "id": "titanium_ore",
+    "name": "Titanium Ore",
+    "vietnameseName": "Quặng titan",
+    "category": "INDUSTRIAL",
+    "mineralComposition": {
+      "ilmenite": 70.0,
+      "rutile": 20.0,
+      "quartz": 10.0
+    },
+    "description": "Titanium-bearing ore containing ilmenite and rutile."
+  },
+  {
+    "id": "tungsten_ore",
+    "name": "Tungsten Ore",
+    "vietnameseName": "Quặng vonfram",
+    "category": "INDUSTRIAL",
+    "mineralComposition": {
+      "scheelite": 80.0,
+      "quartz": 20.0
+    },
+    "description": "Tungsten ore containing wolframite and scheelite with quartz gangue."
+  },
+  {
+    "id": "molybdenum_ore",
+    "name": "Molybdenum Ore",
+    "vietnameseName": "Quặng molypden",
+    "category": "INDUSTRIAL",
+    "mineralComposition": {
+      "molybdenite": 80.0,
+      "powellite": 10.0,
+      "quartz": 10.0
+    },
+    "description": "Molybdenum ore dominated by molybdenite with minor powellite and quartz."
+  }
+]
+
