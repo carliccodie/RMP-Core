@@ -6,7 +6,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonParseException;
-
+import com.carlic.RmpCore.chemistry.compound.ChemicalFormulaParser;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -171,6 +171,18 @@ public final class CompoundDatabase {
                                     + " in compound " + compound.id()
                     );
                 }
+            }
+            Map<String, Integer> parsedComposition =
+                    ChemicalFormulaParser.parse(compound.chemicalFormula());
+
+            if (!parsedComposition.equals(compound.composition())) {
+
+                throw new IllegalStateException(
+                        "Chemical formula does not match composition for "
+                                + compound.id()
+                                + ". Formula: " + parsedComposition
+                                + ", JSON: " + compound.composition()
+                );
             }
 
             if (byId.putIfAbsent(compound.id(), compound) != null) {
